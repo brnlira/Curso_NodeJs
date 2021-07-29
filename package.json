@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/brnlira/Curso_NodeJs/issues"
   },
-  "homepage": "https://github.com/brnlira/Curso_NodeJs#readme"
+  "homepage": "https://github.com/brnlira/Curso_NodeJs#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }

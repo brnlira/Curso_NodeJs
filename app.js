@@ -1,12 +1,22 @@
 var express = require('express');
 var app = express();
 
-app.get('/' , function(req , res){
-   res.send("<html><body>Portal de notícias</body></http>");
-});
+app.set('view engine', 'ejs');
 
 app.get('/tecnologia' , function(req , res){
-    res.send("<html><body>Notícias de Tecnologia</body></http>");
+    res.render("secao/tecnologia");
+ });
+
+app.get('/formulario_inclusao_noticia' , function(req , res){
+   res.render("admin/form_add_noticia");
+});
+
+ app.get('/noticias' , function(req , res){
+    res.render("noticias/noticias");
+ });
+
+ app.get('/' , function(req , res){
+    res.render("home/index");
  });
 
 app.listen(3000, function(){
